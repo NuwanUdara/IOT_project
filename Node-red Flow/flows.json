@@ -1,0 +1,1695 @@
+[
+    {
+        "id": "c543525c00fe4e6e",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cf54ff6a20d7f9e3",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "Disable the Sensor events",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ed22a81201bc724c",
+            "72dec789514cb237",
+            "566389cb2d3d7c3a",
+            "ed389ea84bc92139",
+            "7124137b5754f02a",
+            "cff18a30f73b33de",
+            "2bd0e5890ae34d94",
+            "468a8e72ecc32061",
+            "655af4e450cf14fd",
+            "dfd63a9e5515b4c1",
+            "06dc63aebfb05cca",
+            "27e5de1a9bc598bf",
+            "25d1c12c2e2fb751"
+        ],
+        "x": 754,
+        "y": 559,
+        "w": 772,
+        "h": 322
+    },
+    {
+        "id": "7b740344b06bf29c",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "Min and Max handlers",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "046441cdea8a98e9",
+            "6f658af6199ed3bf",
+            "d147c68b3b338808",
+            "2fcb165dc491d43e",
+            "5c23717b95bd2848",
+            "abeb559ab2eafb8d",
+            "9e1ec02d15695866",
+            "76320ba18ef0a5ed"
+        ],
+        "x": 874,
+        "y": 899,
+        "w": 432,
+        "h": 202
+    },
+    {
+        "id": "a8d6d12169a63e00",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "Update Alarm",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "8e3811ea5d315c34",
+            "b64f196376320395",
+            "3b23617ca521d227",
+            "42f3a21cd999dabb"
+        ],
+        "x": 74,
+        "y": 679,
+        "w": 652,
+        "h": 122
+    },
+    {
+        "id": "347209fc182217f7",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "Update settings",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "30fd1cdac82c8998",
+            "8df011e2e2fe3693",
+            "075a3f3a55ff785f",
+            "6fc60d2a6badc1a6"
+        ],
+        "x": 74,
+        "y": 839,
+        "w": 652,
+        "h": 122
+    },
+    {
+        "id": "451c6a951458e919",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "Update date and time",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4730d60b9f13f516",
+            "e56941a1c7e70e32",
+            "fdb6706bf046966f"
+        ],
+        "x": 74,
+        "y": 559,
+        "w": 652,
+        "h": 82
+    },
+    {
+        "id": "7a75e798bc815554",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "Notification Handlers",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "addd031ab7763086",
+            "ce28712281ad0f55",
+            "8f4ecb5da0a72d6e",
+            "a03f5bf29b874b1b",
+            "2291f7c03997ec12",
+            "c59588b1dcc6e1f7"
+        ],
+        "x": 854,
+        "y": 219,
+        "w": 652,
+        "h": 142
+    },
+    {
+        "id": "08b3899b82aa6b23",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "The Main switcher For Dashboard",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "7981ade59c58dff6",
+            "45115b22bdcc0aac",
+            "3318961b36a0fe83",
+            "64b37c975bea2169",
+            "dd853a92679a3831"
+        ],
+        "x": 74,
+        "y": 979,
+        "w": 732,
+        "h": 122
+    },
+    {
+        "id": "8bf5f82ca02af22f",
+        "type": "group",
+        "z": "c543525c00fe4e6e",
+        "name": "Main Flow",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "1d9a31210f3db941",
+            "b7d12962dc9052b2",
+            "4110da6ccf6d36fb",
+            "ee42f44b645fcc50",
+            "a854b7707356b763",
+            "46d043085dc7c354",
+            "cc82cce76bafc7ea",
+            "d343e582210928c4",
+            "44aa4e086ed36a4f",
+            "52ac9ee2489a1154",
+            "06a0d2053e5980b2",
+            "7a75e798bc815554"
+        ],
+        "x": 74,
+        "y": 79,
+        "w": 1458,
+        "h": 442
+    },
+    {
+        "id": "1d9a31210f3db941",
+        "type": "mqtt in",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "",
+        "topic": "mediboxUdara/+",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "155dbf55f2bc92e2",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "b7d12962dc9052b2"
+            ]
+        ]
+    },
+    {
+        "id": "b7d12962dc9052b2",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "mqtt breaker",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "mediboxUdara/humidity",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mediboxUdara/light_intensity",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mediboxUdara/temperature",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "4110da6ccf6d36fb",
+                "46d043085dc7c354",
+                "52ac9ee2489a1154"
+            ],
+            [
+                "ee42f44b645fcc50"
+            ],
+            [
+                "a854b7707356b763",
+                "d343e582210928c4",
+                "44aa4e086ed36a4f"
+            ]
+        ]
+    },
+    {
+        "id": "4110da6ccf6d36fb",
+        "type": "ui_gauge",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "Humidity",
+        "group": "2c213729641547f0",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#c01c28",
+            "#57e389",
+            "#1c71d8"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 660,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "ee42f44b645fcc50",
+        "type": "ui_gauge",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "Light Internsity",
+        "group": "e1c6b9e82fd4f920",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Light Internsity",
+        "label": "lux",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#77767b",
+            "#cdab8f",
+            "#deddda"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 680,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "a854b7707356b763",
+        "type": "ui_gauge",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "Temparature",
+        "group": "a12dce9122cd639e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temparature",
+        "label": "Celcius",
+        "format": "{{value}}",
+        "min": "-50",
+        "max": "90",
+        "colors": [
+            "#1c71d8",
+            "#f8e45c",
+            "#f66151"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 670,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "addd031ab7763086",
+        "type": "ui_toast",
+        "z": "c543525c00fe4e6e",
+        "g": "7a75e798bc815554",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "Warning",
+        "name": "",
+        "x": 1400,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "46d043085dc7c354",
+        "type": "ui_chart",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "",
+        "group": "2c213729641547f0",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 660,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "046441cdea8a98e9",
+        "type": "ui_text_input",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "",
+        "label": "Max Humidity",
+        "tooltip": "",
+        "group": "2c213729641547f0",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "upper",
+        "topicType": "msg",
+        "x": 980,
+        "y": 1020,
+        "wires": [
+            [
+                "9e1ec02d15695866"
+            ]
+        ]
+    },
+    {
+        "id": "6f658af6199ed3bf",
+        "type": "ui_text_input",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "",
+        "label": "Min Humidity",
+        "tooltip": "",
+        "group": "2c213729641547f0",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "lower",
+        "topicType": "msg",
+        "x": 970,
+        "y": 1060,
+        "wires": [
+            [
+                "76320ba18ef0a5ed"
+            ]
+        ]
+    },
+    {
+        "id": "cc82cce76bafc7ea",
+        "type": "ui_text",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "group": "a12dce9122cd639e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temparature Check",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 850,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d343e582210928c4",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "function 1",
+        "func": "var min = global.get('min_temp');\nvar max = global.get('max_temp');\n\nvar d = new Date();\nvar minutes = d.getMinutes() //-the minute (0-59)\nvar seconds = d.getSeconds() //-the seconds (0-59)\n\nif (min !== undefined && max !== undefined && msg.payload !== undefined) {\n    if (min < msg.payload && max > msg.payload) {\n        msg.payload = \"Temperature is OK.\";\n    } else {\n        msg.payload = \"It is not in a good temperature range.\";\n        msg.payldcheck = \"It is not in a good temperature range.\" + minutes;       \n    }\n} else {\n    msg.payload = \"Temperature data is incomplete.\";\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 460,
+        "wires": [
+            [
+                "cc82cce76bafc7ea",
+                "8f4ecb5da0a72d6e"
+            ]
+        ]
+    },
+    {
+        "id": "d147c68b3b338808",
+        "type": "ui_text_input",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "",
+        "label": "Max tempararature",
+        "tooltip": "",
+        "group": "a12dce9122cd639e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": "300",
+        "topic": "upper",
+        "topicType": "msg",
+        "x": 990,
+        "y": 940,
+        "wires": [
+            [
+                "5c23717b95bd2848"
+            ]
+        ]
+    },
+    {
+        "id": "2fcb165dc491d43e",
+        "type": "ui_text_input",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "",
+        "label": "Min tempararature",
+        "tooltip": "",
+        "group": "a12dce9122cd639e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "val",
+        "topicType": "msg",
+        "x": 990,
+        "y": 980,
+        "wires": [
+            [
+                "abeb559ab2eafb8d"
+            ]
+        ]
+    },
+    {
+        "id": "5c23717b95bd2848",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "Temp MAX",
+        "func": "global.set('max_temp', msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "abeb559ab2eafb8d",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "Temp MIN",
+        "func": "global.set('min_temp', msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "44aa4e086ed36a4f",
+        "type": "ui_chart",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "Temparature",
+        "group": "a12dce9122cd639e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temparature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 670,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9e1ec02d15695866",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "Hum MAX",
+        "func": "global.set('max_hum', msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "76320ba18ef0a5ed",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "7b740344b06bf29c",
+        "name": "Hum MIN",
+        "func": "global.set('min_hum', msg.payload);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1220,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52ac9ee2489a1154",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "name": "function 3",
+        "func": "var min = global.get('min_hum');\nvar max = global.get('max_hum');\n\nvar d = new Date();\nvar minutes = d.getMinutes() //-the minute (0-59)\nvar seconds = d.getSeconds() //-the seconds (0-59)\n\nif (min !== undefined && max !== undefined && msg.payload !== undefined) {\n    if (min < msg.payload && max > msg.payload) {\n        msg.payload = \"Humidity is OK.\";\n    } else {\n        msg.payload = \"It is not in a good Humidity range.\";\n        msg.payldcheck = \"It is not in a good Humidity range.\" + minutes;       \n    }\n} else {\n    msg.payload = \"Humidity data is incomplete.\";\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "06a0d2053e5980b2",
+                "a03f5bf29b874b1b"
+            ]
+        ]
+    },
+    {
+        "id": "06a0d2053e5980b2",
+        "type": "ui_text",
+        "z": "c543525c00fe4e6e",
+        "g": "8bf5f82ca02af22f",
+        "group": "2c213729641547f0",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "Humidity Check",
+        "label": "Humidity Check",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 840,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "ce28712281ad0f55",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "7a75e798bc815554",
+        "name": "Send Notification",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "It is not in a good temperature range.",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1150,
+        "y": 320,
+        "wires": [
+            [
+                "addd031ab7763086"
+            ]
+        ]
+    },
+    {
+        "id": "2291f7c03997ec12",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "7a75e798bc815554",
+        "name": "Send Notification",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "\"It is not in a good Humidity range.\"",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1150,
+        "y": 260,
+        "wires": [
+            [
+                "c59588b1dcc6e1f7"
+            ]
+        ]
+    },
+    {
+        "id": "c59588b1dcc6e1f7",
+        "type": "ui_toast",
+        "z": "c543525c00fe4e6e",
+        "g": "7a75e798bc815554",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "Warning",
+        "name": "",
+        "x": 1400,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4730d60b9f13f516",
+        "type": "ui_button",
+        "z": "c543525c00fe4e6e",
+        "g": "451c6a951458e919",
+        "name": "",
+        "group": "0c1ffe6cd7b1d0b4",
+        "order": 1,
+        "width": 11,
+        "height": 1,
+        "passthru": false,
+        "label": "Set Time and Date",
+        "tooltip": "Sync the time and date",
+        "color": "Blue",
+        "bgcolor": "",
+        "icon": "fa-clock",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 190,
+        "y": 600,
+        "wires": [
+            [
+                "e56941a1c7e70e32"
+            ]
+        ]
+    },
+    {
+        "id": "e56941a1c7e70e32",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "451c6a951458e919",
+        "name": "setup time",
+        "func": "var sec_error = 1;\nvar d = new Date();\nvar day = d.getDate()  //day as a number 1 -31\nvar month = d.getMonth() +1 // month as a number 0-11\nvar year = d.getFullYear() //year as a four digit number (yyyy)\nvar hours = d.getHours() //the hour (0-23)\nvar minutes = d.getMinutes() //-the minute (0-59)\nvar seconds = d.getSeconds() + sec_error //-the seconds (0-59)\n\n//construct a json object with the data to send to the server\nvar data = { \"d\": day, \"m\": month, \"y\": year, \"h\": hours, \"mi\": minutes, \"s\": seconds };\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 600,
+        "wires": [
+            [
+                "fdb6706bf046966f"
+            ]
+        ]
+    },
+    {
+        "id": "fdb6706bf046966f",
+        "type": "mqtt out",
+        "z": "c543525c00fe4e6e",
+        "g": "451c6a951458e919",
+        "name": "Send date and time",
+        "topic": "mediboxUdara/time",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "155dbf55f2bc92e2",
+        "x": 610,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "8e3811ea5d315c34",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "a8d6d12169a63e00",
+        "name": "create the object",
+        "func": "function convertUTCDateToLocalDate(date) {\n    date= new Date(date);\n    var newDate = new Date(date.getTime() - date.getTimezoneOffset() * 60 * 1000);\n    return newDate;\n}\n\nvar alarm1 = convertUTCDateToLocalDate(msg.alarm_1);\nvar alarm2 = convertUTCDateToLocalDate(msg.alarm_2);\nvar alarm3 = convertUTCDateToLocalDate(msg.alarm_3);\n\n\nvar num = msg.number_of_days;\nvar hours1 = alarm1.getUTCHours();\nvar minutes1 = alarm1.getUTCMinutes();\nvar ae1 = msg.alarm_1_enable || false;\n\nvar hours2 = alarm2.getUTCHours();\nvar minutes2 = alarm2.getUTCMinutes();\nvar ae2 = msg.alarm_2_enable || false;\n\nvar hours3 = alarm3.getUTCHours();\nvar minutes3 = alarm3.getUTCMinutes();\nvar ae3 = msg.alarm_3_enable || false;\n\nvar master_enable = msg.master_schedule || false;\nvar d = new Date();\nvar day = d.getDate()  //day as a number 1 -31\nvar month = d.getMonth() + 1 // month as a number 0-11\nvar year = d.getFullYear() //year as a four digit number (yyyy)\n\n\nvar jsonObject = {\n    y:year,\n    m:month,\n    d:day,\n    n: num,\n    me: master_enable,\n    a:[ {\n        h: hours1,\n        m: minutes1,\n        e: ae1\n    },\n    {\n        h: hours2,\n        m: minutes2,\n        e: ae2\n    },\n    {\n        h: hours3,\n        m: minutes3,\n        e: ae3\n    }\n    ]\n};\n\nmsg.payload = jsonObject;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 720,
+        "wires": [
+            [
+                "3b23617ca521d227"
+            ]
+        ]
+    },
+    {
+        "id": "b64f196376320395",
+        "type": "ui_template",
+        "z": "c543525c00fe4e6e",
+        "g": "a8d6d12169a63e00",
+        "group": "825054402525d3ca",
+        "name": "",
+        "order": 1,
+        "width": 11,
+        "height": 7,
+        "format": "\n<style>\n  body {\n    font-family: Arial, sans-serif;\n    background-color: #1a1a1a;\n    color: #fff;\n  }\n\n  .switch {\n    position: relative;\n    display: inline-block;\n    width: 40px;\n    height: 20px;\n    vertical-align: middle;\n    margin-left: 10px;\n  }\n\n  .switch input {\n    opacity: 0;\n    width: 0;\n    height: 0;\n  }\n\n  .slider {\n    position: absolute;\n    cursor: pointer;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-color: #555;\n    -webkit-transition: .4s;\n    transition: .4s;\n  }\n\n  .slider:before {\n    position: absolute;\n    content: \"\";\n    height: 16px;\n    width: 16px;\n    left: 2px;\n    bottom: 2px;\n    background-color: white;\n    -webkit-transition: .4s;\n    transition: .4s;\n  }\n\n  input:checked+.slider {\n    background-color: #2196F3;\n  }\n\n  input:focus+.slider {\n    box-shadow: 0 0 1px #2196F3;\n  }\n\n  input:checked+.slider:before {\n    -webkit-transform: translateX(20px);\n    -ms-transform: translateX(20px);\n    transform: translateX(20px);\n  }\n\n  /* Rounded sliders */\n  .slider.round {\n    border-radius: 20px;\n  }\n\n  .slider.round:before {\n    border-radius: 50%;\n  }\n\n  label {\n    font-weight: bold;\n    color: #00bfff;\n  }\n\n  input[type=\"time\"],\n  input[type=\"number\"] {\n    border: none;\n    border-radius: 4px;\n    padding: 6px 10px;\n    margin: 2px 0;\n    background-color: #333;\n    color: #ddd;\n  }\n\n  .row {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 20px;\n  }\n\n  .row>div {\n    flex: 1;\n    margin-right: 10px;\n  }\n\n  .row>div:last-child {\n    margin-right: 0;\n  }\n\n  button {\n    background-color: #2196F3;\n    border: none;\n    color: white;\n    padding: 10px 20px;\n    text-align: center;\n    text-decoration: none;\n    display: inline-block;\n    font-size: 16px;\n    margin: 4px 2px;\n    cursor: pointer;\n    border-radius: 4px;\n  }\n\n  /* Separate style for Master Schedule switch */\n  .switch.master-switch {\n    width: 80px;\n    height: 40px;\n  }\n\n  .switch.master-switch .slider {\n    background-color: #555;\n    -webkit-transition: .4s;\n    transition: .4s;\n    border-radius: 40px;\n  }\n\n  .switch.master-switch input:checked+.slider {\n    background-color: #f00;\n  }\n\n  .switch.master-switch input:checked+.slider:before {\n    -webkit-transform: translateX(40px);\n    -ms-transform: translateX(40px);\n    transform: translateX(40px);\n  }\n\n  .switch.master-switch .slider:before {\n    height: 36px;\n    width: 36px;\n    left: 2px;\n    bottom: 2px;\n    background-color: white;\n    -webkit-transition: .4s;\n    transition: .4s;\n    border-radius: 50%;\n  }\n</style>\n\n<form ng-submit=\"send(payload)\">\n  <div class=\"row\">\n    <div>\n      <label>\n        Alarm 1:\n        <input type=\"time\" ng-model=\"payload.alarm_1\" step=\"60\" required>\n      </label>\n    </div>\n    <div>\n      <label>\n        Alarm 1 Enable:\n        <span class=\"switch\">\n          <input type=\"checkbox\" ng-model=\"payload.alarm_1_enable\">\n          <span class=\"slider round\"></span>\n        </span>\n      </label>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div>\n      <label>\n        Alarm 2:\n        <input type=\"time\" ng-model=\"payload.alarm_2\" step=\"60\" required>\n      </label>\n    </div>\n    <div>\n      <label>\n        Alarm 2 Enable:\n        <span class=\"switch\">\n          <input type=\"checkbox\" ng-model=\"payload.alarm_2_enable\">\n          <span class=\"slider round\"></span>\n        </span>\n      </label>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div>\n      <label>\n        Alarm 3:\n        <input type=\"time\" ng-model=\"payload.alarm_3\" step=\"60\" required>\n      </label>\n    </div>\n    <div>\n      <label>\n        Alarm 3 Enable:\n        <span class=\"switch\">\n          <input type=\"checkbox\" ng-model=\"payload.alarm_3_enable\">\n          <span class=\"slider round\"></span>\n        </span>\n      </label>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div>\n      <label>\n        Master Schedule:\n        <span class=\"switch master-switch\">\n          <input type=\"checkbox\" ng-model=\"payload.master_schedule\">\n          <span class=\"slider\"></span>\n        </span>\n      </label>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div>\n      <label>\n        Number of Days:\n        <input type=\"number\" ng-model=\"payload.number_of_days\" min=\"1\" required ng-init=\"payload.number_of_days = 5\">\n      </label>\n    </div>\n  </div>\n  <button type=\"submit\">Send</button>\n</form>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 160,
+        "y": 720,
+        "wires": [
+            [
+                "8e3811ea5d315c34",
+                "42f3a21cd999dabb"
+            ]
+        ]
+    },
+    {
+        "id": "3b23617ca521d227",
+        "type": "mqtt out",
+        "z": "c543525c00fe4e6e",
+        "g": "a8d6d12169a63e00",
+        "name": "",
+        "topic": "mediboxUdara/alarm",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "155dbf55f2bc92e2",
+        "x": 600,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "8f4ecb5da0a72d6e",
+        "type": "rbe",
+        "z": "c543525c00fe4e6e",
+        "g": "7a75e798bc815554",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payldcheck",
+        "topi": "topic",
+        "x": 930,
+        "y": 320,
+        "wires": [
+            [
+                "ce28712281ad0f55"
+            ]
+        ]
+    },
+    {
+        "id": "a03f5bf29b874b1b",
+        "type": "rbe",
+        "z": "c543525c00fe4e6e",
+        "g": "7a75e798bc815554",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payldcheck",
+        "topi": "topic",
+        "x": 930,
+        "y": 260,
+        "wires": [
+            [
+                "2291f7c03997ec12"
+            ]
+        ]
+    },
+    {
+        "id": "30fd1cdac82c8998",
+        "type": "ui_template",
+        "z": "c543525c00fe4e6e",
+        "g": "347209fc182217f7",
+        "group": "7d62f5258202921c",
+        "name": "",
+        "order": 2,
+        "width": "6",
+        "height": "11",
+        "format": "<!DOCTYPE html>\n<html>\n\n<head>\n  <style>\n    /* Custom CSS for the switch */\n    .switch {\n      position: relative;\n      display: inline-block;\n      width: 45px;\n      height: 25px;\n      margin-left: 10px;\n    }\n\n    .row {\n      margin-bottom: 10px;\n    }\n\n    .switch input {\n      display: none;\n    }\n\n    .slider {\n      position: absolute;\n      cursor: pointer;\n      top: 0;\n      left: 0;\n      right: 0;\n      bottom: 0;\n      background-color: #ccc;\n      transition: 0.4s;\n      border-radius: 25px;\n    }\n\n    .slider:before {\n      position: absolute;\n      content: \"\";\n      height: 21px;\n      width: 21px;\n      left: 2px;\n      bottom: 2px;\n      background-color: white;\n      transition: 0.4s;\n      border-radius: 50%;\n    }\n\n    input:checked+.slider {\n      background-color: #2196F3;\n    }\n\n    input:checked+.slider:before {\n      transform: translateX(20px);\n    }\n\n    .slider.round {\n      border-radius: 25px;\n    }\n\n    .slider.round:before {\n      border-radius: 50%;\n    }\n  </style>\n</head>\n\n<body>\n  <form ng-submit=\"send(payload)\">\n    <div class=\"row\">\n      <div>\n        <label>\n          Min Angle for shade:\n          <input type=\"range\" ng-model=\"payload.angle\" min=\"0\" max=\"360\" step=\"1\" required ng-init=\"payload.angle = 35\">\n          <span>{{payload.angle}}</span>\n        </label>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div>\n        <label>\n          Controlling factor:\n          <input type=\"range\" ng-model=\"payload.cf\" min=\"0\" max=\"0.99\" step=\"0.01\" required ng-init=\"payload.cf = 0.75\">\n          <span>{{payload.cf}}</span>\n        </label>\n      </div>\n    </div>\n    <div class=\"row\" style=\"display: flex; align-items: center;\">\n      <div style=\"margin-right: 10px;\">\n        <label>Buzzer enabled:</label>\n      </div>\n      <div class=\"switch\">\n        <label>\n          <input type=\"checkbox\" ng-model=\"payload.Buzzer\" ng-init=\"payload.Buzzer = true\">\n          <span class=\"slider round\"></span>\n        </label>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div>\n        <label>\n          Alarm Mode:\n          <select ng-model=\"payload.alarm_mode\" required ng-init=\"payload.alarm_mode = '0'\">\n            <option value=\"0\">Continuous</option>\n            <option value=\"1\">On-Off</option>\n          </select>\n        </label>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div>\n        <label>\n          Alarm Frequency:\n          <input type=\"range\" ng-model=\"payload.alarm_frequency\" min=\"256\" max=\"1024\" step=\"1\" required>\n          <span>{{payload.alarm_frequency}}</span>\n        </label>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div>\n        <label>\n          Delay between alarms :\n          <input type=\"range\" ng-model=\"payload.alarm_delay\" min=\"1\" max=\"30\" step=\"1\" required ng-init=\"payload.alarm_delay = 1\">\n          <span>{{payload.alarm_delay}}</span>\n        </label>\n      </div>\n    </div>\n    <div class=\"row\">\n      <div>\n        <label>\n          Alarm Duration:\n          <input type=\"number\" ng-model=\"payload.alarm_duration\" min=\"1\" max=\"10\" required ng-init=\"payload.alarm_duration = 1\">\n        </label>\n      </div>\n    </div>\n    <button type=\"submit\">Send</button>\n  </form>\n</body>\n\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 160,
+        "y": 880,
+        "wires": [
+            [
+                "8df011e2e2fe3693",
+                "075a3f3a55ff785f"
+            ]
+        ]
+    },
+    {
+        "id": "42f3a21cd999dabb",
+        "type": "debug",
+        "z": "c543525c00fe4e6e",
+        "g": "a8d6d12169a63e00",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "8df011e2e2fe3693",
+        "type": "function",
+        "z": "c543525c00fe4e6e",
+        "g": "347209fc182217f7",
+        "name": "create the object",
+        "func": "var alarm_duration = msg.alarm_duration;\nvar min_angle = msg.angle;\nvar cf = msg.cf;\nvar freq = msg.alarm_frequency;\nvar delay = msg.alarm_delay;\nvar alarm_mode = parseInt(msg.alarm_mode);\nvar Buzzer_en = msg.Buzzer;\n\nvar jsonObject = {\n    min_a: min_angle,\n    cf: cf,\n    b: Buzzer_en,\n    am: alarm_mode,\n    f: freq,\n    dur: alarm_duration,\n    del: delay\n};\n\nmsg.payload = jsonObject;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 880,
+        "wires": [
+            [
+                "6fc60d2a6badc1a6"
+            ]
+        ]
+    },
+    {
+        "id": "075a3f3a55ff785f",
+        "type": "debug",
+        "z": "c543525c00fe4e6e",
+        "g": "347209fc182217f7",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "6fc60d2a6badc1a6",
+        "type": "mqtt out",
+        "z": "c543525c00fe4e6e",
+        "g": "347209fc182217f7",
+        "name": "Send Settings data",
+        "topic": "mediboxUdara/settings",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "155dbf55f2bc92e2",
+        "x": 610,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "ed22a81201bc724c",
+        "type": "ui_dropdown",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "label": "Light",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "116310727bf9b928",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Show",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "Hide",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 830,
+        "y": 640,
+        "wires": [
+            [
+                "72dec789514cb237"
+            ]
+        ]
+    },
+    {
+        "id": "72dec789514cb237",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1030,
+        "y": 600,
+        "wires": [
+            [
+                "566389cb2d3d7c3a"
+            ],
+            [
+                "ed389ea84bc92139"
+            ]
+        ]
+    },
+    {
+        "id": "566389cb2d3d7c3a",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Sensor_Data_Light\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 600,
+        "wires": [
+            [
+                "dfd63a9e5515b4c1"
+            ]
+        ]
+    },
+    {
+        "id": "ed389ea84bc92139",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Sensor_Data_Light\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 640,
+        "wires": [
+            [
+                "dfd63a9e5515b4c1"
+            ]
+        ]
+    },
+    {
+        "id": "7124137b5754f02a",
+        "type": "ui_dropdown",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "label": "Temparature",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "116310727bf9b928",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Show",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "Hide",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 850,
+        "y": 700,
+        "wires": [
+            [
+                "cff18a30f73b33de"
+            ]
+        ]
+    },
+    {
+        "id": "cff18a30f73b33de",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1030,
+        "y": 700,
+        "wires": [
+            [
+                "2bd0e5890ae34d94"
+            ],
+            [
+                "468a8e72ecc32061"
+            ]
+        ]
+    },
+    {
+        "id": "2bd0e5890ae34d94",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Sensor_Data_Temparature\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 700,
+        "wires": [
+            [
+                "dfd63a9e5515b4c1"
+            ]
+        ]
+    },
+    {
+        "id": "468a8e72ecc32061",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Sensor_Data_Temparature\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 740,
+        "wires": [
+            [
+                "dfd63a9e5515b4c1"
+            ]
+        ]
+    },
+    {
+        "id": "655af4e450cf14fd",
+        "type": "ui_dropdown",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "label": "Humidity",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "116310727bf9b928",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Show",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "Hide",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 840,
+        "y": 760,
+        "wires": [
+            [
+                "06dc63aebfb05cca"
+            ]
+        ]
+    },
+    {
+        "id": "dfd63a9e5515b4c1",
+        "type": "ui_ui_control",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "events": "all",
+        "x": 1440,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "06dc63aebfb05cca",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1030,
+        "y": 800,
+        "wires": [
+            [
+                "27e5de1a9bc598bf"
+            ],
+            [
+                "25d1c12c2e2fb751"
+            ]
+        ]
+    },
+    {
+        "id": "27e5de1a9bc598bf",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"show\":[\"Sensor_Data_Humidity\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 800,
+        "wires": [
+            [
+                "dfd63a9e5515b4c1"
+            ]
+        ]
+    },
+    {
+        "id": "25d1c12c2e2fb751",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "cf54ff6a20d7f9e3",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"group\":{\"hide\":[\"Sensor_Data_Humidity\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1240,
+        "y": 840,
+        "wires": [
+            [
+                "dfd63a9e5515b4c1"
+            ]
+        ]
+    },
+    {
+        "id": "7981ade59c58dff6",
+        "type": "ui_dropdown",
+        "z": "c543525c00fe4e6e",
+        "g": "08b3899b82aa6b23",
+        "name": "",
+        "label": "Main Switcher",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c75f95046c0f731f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Enable",
+                "value": true,
+                "type": "bool"
+            },
+            {
+                "label": "Disable",
+                "value": false,
+                "type": "bool"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 1040,
+        "wires": [
+            [
+                "45115b22bdcc0aac"
+            ]
+        ]
+    },
+    {
+        "id": "45115b22bdcc0aac",
+        "type": "switch",
+        "z": "c543525c00fe4e6e",
+        "g": "08b3899b82aa6b23",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 350,
+        "y": 1040,
+        "wires": [
+            [
+                "64b37c975bea2169"
+            ],
+            [
+                "3318961b36a0fe83"
+            ]
+        ]
+    },
+    {
+        "id": "3318961b36a0fe83",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "08b3899b82aa6b23",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tabs\":{\"hide\":[\"Sensor_Data\",\"Set Date and Time\"]},\"group\":{\"hide\":[\"Settings_Set_variables\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1060,
+        "wires": [
+            [
+                "dd853a92679a3831"
+            ]
+        ]
+    },
+    {
+        "id": "64b37c975bea2169",
+        "type": "change",
+        "z": "c543525c00fe4e6e",
+        "g": "08b3899b82aa6b23",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"tabs\":{\"show\":[\"Sensor_Data\",\"Set Date and Time\"]},\"group\":{\"show\":[\"Settings_Set_variables\"]}}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 1020,
+        "wires": [
+            [
+                "dd853a92679a3831"
+            ]
+        ]
+    },
+    {
+        "id": "dd853a92679a3831",
+        "type": "ui_ui_control",
+        "z": "c543525c00fe4e6e",
+        "g": "08b3899b82aa6b23",
+        "name": "",
+        "events": "all",
+        "x": 720,
+        "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "964ba9c236b924dd",
+        "type": "ui_spacer",
+        "z": "c543525c00fe4e6e",
+        "name": "spacer",
+        "group": "116310727bf9b928",
+        "order": 1,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "155dbf55f2bc92e2",
+        "type": "mqtt-broker",
+        "name": "base_mqtt",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "2c213729641547f0",
+        "type": "ui_group",
+        "name": "Humidity",
+        "tab": "08bb03ae2fa91d9d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "e1c6b9e82fd4f920",
+        "type": "ui_group",
+        "name": "Light",
+        "tab": "08bb03ae2fa91d9d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a12dce9122cd639e",
+        "type": "ui_group",
+        "name": "Temparature",
+        "tab": "08bb03ae2fa91d9d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "0c1ffe6cd7b1d0b4",
+        "type": "ui_group",
+        "name": "Update current Time",
+        "tab": "3a555d5524818aab",
+        "order": 2,
+        "disp": true,
+        "width": 11,
+        "collapse": false
+    },
+    {
+        "id": "825054402525d3ca",
+        "type": "ui_group",
+        "name": "Set Date and Time",
+        "tab": "3a555d5524818aab",
+        "order": 1,
+        "disp": true,
+        "width": "11",
+        "collapse": true
+    },
+    {
+        "id": "7d62f5258202921c",
+        "type": "ui_group",
+        "name": "Set variables",
+        "tab": "583a96f4dba9148e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "116310727bf9b928",
+        "type": "ui_group",
+        "name": "Toggle",
+        "tab": "08bb03ae2fa91d9d",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c75f95046c0f731f",
+        "type": "ui_group",
+        "name": "Main Toggler",
+        "tab": "583a96f4dba9148e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "08bb03ae2fa91d9d",
+        "type": "ui_tab",
+        "name": "Sensor_Data",
+        "icon": "fa-mixcloud",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3a555d5524818aab",
+        "type": "ui_tab",
+        "name": "Set Date and Time",
+        "icon": "timer",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "583a96f4dba9148e",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "fa-sliders",
+        "disabled": false,
+        "hidden": false
+    }
+]
